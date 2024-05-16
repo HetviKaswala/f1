@@ -1,8 +1,13 @@
+/*
+*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #pragma warning(disable: 4996) 
-// for storing the flight information the str4uct is created. 
+// for storing the flight information the struct is created. 
 struct FlightInfo
 {
     char* destination;
@@ -10,7 +15,7 @@ struct FlightInfo
 };
 // Function prototype
 void fillFlightInfo(FlightInfo* flight, const char* destination, const char* date);
-void printFlightInfo(FlightInfo flights[], int count);
+void printFlightInfo(FlightInfo flights[], int counting);
 
 int main()
 {
@@ -57,9 +62,9 @@ void fillFlightInfo(FlightInfo* flight, const char* destination, const char* dat
     }
 }
 // printing the flights information 
-void printFlightInfo(FlightInfo flights[], int count) 
+void printFlightInfo(FlightInfo flights[], int counting) 
 {
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < counting; i++) {
         printf("%-35s%-35s\n", flights[i].destination, flights[i].date);// printing destination and date in the coloumns. 
     }
 }

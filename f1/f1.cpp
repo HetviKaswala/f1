@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #pragma warning(disable: 4996) 
-// declaring struct for storing flight information
+// for storing the flight information the str4uct is created. 
 struct FlightInfo
 {
     char* destination;
     char* date;
 };
-// Function prototype;
+// Function prototype
 void fillFlightInfo(FlightInfo* flight, const char* destination, const char* date);
 void printFlightInfo(FlightInfo flights[], int count);
 

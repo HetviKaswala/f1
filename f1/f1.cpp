@@ -1,7 +1,10 @@
-/*
+/*File Name:- f1.cpp
+* Project:- SENG1000- Focused Assignment 1
+Programmer:- Hetvi Kaswala
+First Version:-17 May 2024
+Description:- This Program will take the information of the the flight (i.e. destination and date) and 
+              store the data in array of struct. 
 */
-
-
 
 #include <stdio.h>
 #include <stdlib.h>

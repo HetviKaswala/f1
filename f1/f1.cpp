@@ -5,7 +5,6 @@ First Version:-17 May 2024
 Description:- This Program will take the information of the the flight (i.e. destination and date) and 
               store the data in array of struct. 
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,10 +24,9 @@ int main()
     FlightInfo flights[10] = { 0 };
     char destination[31] = { 0 };
     char date[31] = { 0 };
+    // printing destination and date on same lines.
+    printf("Enter the destination and the date for the 10 flights.\n");
 
-    printf("Please enter the destination and date for 10 flights.\n");// printing 
-    printf("For each flight, enter the destination on the first line and the date on the second line.\n\n");
-    // printing destination and date on different lines.
 
     for (int i = 0; i < 10; i++) // to input information for 10 entry of the flight. 
     {
@@ -37,7 +35,7 @@ int main()
         destination[strcspn(destination, "\n")] = '\0'; // to remove new line character.
 
         printf("Enter date for flight %d: ", i + 1);
-        fgets(date, 31, stdin);
+        fgets(date,31, stdin);
         date[strcspn(date, "\n")] = '\0'; // to remove new line character.
 
         fillFlightInfo(&flights[i], destination, date);

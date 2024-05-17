@@ -65,7 +65,11 @@ void fillFlightInfo(FlightInfo* flight, const char* destination, const char* dat
         strncpy(flight->date, date, 31);
     }
 }
-// printing the flights information 
+/*Function name:-printFlightInfo
+* Function Description:-This function will be help to print the flight information. 
+* Parameters:- FlightInfo flights[], int counting
+* return type:- no return type due to void functions.
+*/
 void printFlightInfo(FlightInfo flights[], int counting) 
 {
     for (int i = 0; i < counting; i++) {

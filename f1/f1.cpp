@@ -26,8 +26,6 @@ int main()
     char date[31] = { 0 };
     // printing destination and date on same lines.
     printf("Enter the destination and the date for the 10 flights.\n");
-
-
     for (int i = 0; i < 10; i++) // to input information for 10 entry of the flight. 
     {
         printf("Enter destination for flight %d: ", i + 1);
@@ -48,7 +46,12 @@ int main()
     free(flights->date);
     return 0;
 }
-// to fill information for the singlr flight.
+
+/* Function name:- fillFlightInfo();
+* Function Description:- this function help to fill single flight information.
+* Parameters:- FlightInfo* flight , const char* destination, const char* date
+* return type:-   no return type due to void function
+*/
 void fillFlightInfo(FlightInfo* flight, const char* destination, const char* date)
 {
     if (flight->destination = (char*)malloc(strlen(destination) + 1)) 

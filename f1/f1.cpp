@@ -21,9 +21,10 @@ void printFlightInfo(FlightInfo flights[], int counting);
 
 int main()
 {
-    FlightInfo flights[10] = { 0 };
-    char destination[31] = { 0 };
     char date[31] = { 0 };
+    char destination[31] = { 0 };
+    FlightInfo flights[10] = { 0 };
+
     // printing destination and date on same lines.
     printf("Enter the destination and the date for the 10 flights.\n");
     for (int i = 0; i < 10; i++) // to input information for 10 entry of the flight. 
